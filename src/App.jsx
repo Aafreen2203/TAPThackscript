@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage/LandingPage";
-import Services from "./Services/Services";
+import Results from "./Results/Results"; // Import the Results page
 
 const App = () => {
   return (
-    <>
-      <LandingPage />
-      <Services />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/results" element={<Results />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,0 +1,70 @@
+/* Container for Services */
+.services-container {
+  width: 100%;
+  height: 550px; /* Increased height */
+  text-align: center;
+  padding: 60px 0;
+  background: white;
+}
+
+/* Title Styling */
+.serviceTitle {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+/* Services List */
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensures equal height */
+  gap: 50px; /* Increased gap for better spacing */
+  padding: 0 80px;
+}
+
+/* Individual Service Item */
+.service-item {
+  max-width: 280px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Service Titles */
+.service-item h3 {
+  min-height: 80px; /* Ensures all titles occupy same height */
+  font-size: 2rem;
+  color: #c19a6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Service Descriptions */
+.service-item p {
+  min-height: 120px; /* Ensures all descriptions occupy same height */
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Vertical Line */
+.vertical-line {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%; /* Adjusted height for better alignment */
+  width: 2px;
+  background-color: #c19a6b;
+}
